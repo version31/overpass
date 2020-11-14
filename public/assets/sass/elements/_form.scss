@@ -967,3 +967,15 @@ form .input-select .select2-container--default .select2-selection--single .selec
         }
     }
 }
+
+
+.el-form {
+    input {
+        @include placeholder () {
+            color: $text-color;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+    }
+}
