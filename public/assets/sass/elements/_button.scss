@@ -11,7 +11,7 @@
     &.button-icon {
         height: 30px;
         .text {
-            font-weight: 700;
+            font-weight: 500;
         }
         .icon {
             width: 21px;
@@ -71,7 +71,8 @@
 ------------------------------------*/
 
 .button {
-    font-weight: bold;
+    font-weight: 500;
+    letter-spacing: 0 !important;
     font-family: $font-family-2;
     position: relative;
     white-space: nowrap;
@@ -105,7 +106,7 @@
 .button-md {
     height: 45px;
     font-size: 14px;
-    padding: 9px 30px;
+    padding: 12px 21px;
 }
 .button-circle-md {
     width: 45px;
@@ -126,9 +127,9 @@
     line-height: 55px;
 }
 .button-xl {
-    height: 62px;
+    height: 60px;
     font-size: 16px;
-    padding: 16px 42px;
+    padding: 16px 30px;
 }
 .button-circle-xl {
     width: 62px;
@@ -245,7 +246,7 @@
     }
 }
 .button-radius {
-    border-radius: 24px;
+    border-radius: 45px;
 }
 .button-icon-md {
     width: 45px;
