@@ -3,6 +3,7 @@
 ------------------------------------*/
 
 :root {
+    --vw: 1vw;
     --gray: #eee;
     --white: #fff;
     --black: #000;
@@ -10,19 +11,16 @@
     --base-0: #fff;
     --base-1: #151812;
     --base-1: #152c5b;
-    --primary: #ef394e;
-    --primary: #384cce;
-    --primary: #008aff;
+    --base-1: #1e2432;
     --primary: #0099ff;
-    --primary-1: #384cce;
-    --primary-3: #171347;
+    --primary-1: #1a49ba;
+    --primary-3: #1a49ba;
     --secondary: #00c9b7;
-    --secondary: #f8a438;
-    --secondary-1: rgb(18, 172, 159);
-    --secondary-1: rgb(248, 164, 56);
-    --text-color: #666;
-    --text-color: #718096;
-    --color-1: #70b6fe;
+    --secondary: #ffda54;
+    --secondary-1: #f8a438;
+    --secondary-3: #f8a438;
+    --text-color: #687086;
+    --color-1: #f9b8c4;
     --color-2: #c670fe;
     --color-3: #fec070;
     --color-4: #dc3545;
@@ -58,24 +56,26 @@ $warning: #f6931c;
 $danger: red;
 
 // Social
-$google: #B23121;
-$twitter: #1DA1F2;
+$google: #b23121;
+$twitter: #1da1f2;
 $linkedin: #0e76a8;
 $facebook: #3b5998;
-$instagram: #E1306C;
-$instagram: #C13584;
-$pinterest: #BD081C;
-$pinterest: #B23121;
+$instagram: #e1306c;
+$instagram: #c13584;
+$pinterest: #bd081c;
+$pinterest: #b23121;
 
 // Font Family
 // $font-family-1: 'Jost', sans-serif;
 // $font-family-1: 'Open Sans', sans-serif;
 // $font-family-1: 'Helvetica', sans-serif;
 // $font-family-1: 'Nunito Sans', sans-serif;
-$font-family-1: 'Cairo', sans-serif;
-$font-family-2: 'Cairo', sans-serif;
-$font-family-3: 'Cairo', sans-serif;
-
+// $font-family-1: 'Cairo', sans-serif;
+// $font-family-2: 'Cairo', sans-serif;
+// $font-family-3: 'Cairo', sans-serif;
+$font-family-1: "Poppins", sans-serif;
+$font-family-2: "Poppins", sans-serif;
+$font-family-3: "Poppins", sans-serif;
 
 // Grid
 $sm: 576px;
@@ -85,7 +85,7 @@ $xl: 1230px;
 $space: 100px;
 
 // Heading
-$h1: 60px;
+$h1: 69px;
 $h2: 36px;
 $h3: 27px;
 $h4: 24px;
