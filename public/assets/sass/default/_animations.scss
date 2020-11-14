@@ -23,7 +23,7 @@
 }
 @keyframes demo {
     0% {
-        transform: translate(0,0);
+        transform: translate(0, 0);
     }
     100% {
         transform: translate(0, -50%);
@@ -192,4 +192,25 @@
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
+}
+
+@keyframes strokeProgress1 {
+    0% {
+        stroke-dasharray: 0, 100;
+    }
+    100% {
+        stroke-dasharray: 100, 1;
+    }
+}
+@keyframes strokeProgress2 {
+    20% {
+        stroke-dasharray: 0, 100;
+    }
+    80% {
+        stroke-dasharray: 100, 1;
+    }
+    100% {
+        stroke-dasharray: 0, 100;
+        background-color: $primary;
+    }
 }
