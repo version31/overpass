@@ -2,179 +2,106 @@
     Footer
 ------------------------------------*/
 
+// Default
 .app-footer {
-    width: 100%;
-    display: block;
+    color: $base-0;
+    font-weight: 600;
     overflow: hidden;
     position: relative;
-    .footer-copyright {
-        overflow: hidden;
-        position: relative;
-        p {
-            color: inherit;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 0;
-        }
-        .container {
+    background-color: $primary-1;
+    p {
+        color: inherit;
+        margin-bottom: 20px;
+    }
+    .footer-logo {
+        svg {
+            top: -12px;
+            fill: $base-0;
             position: relative;
+            margin-right: 15px;
+        }
+        .text {
+            top: 0;
+            font-size: 18px;
+            position: absolute;
         }
     }
     .footer-widgets {
-        .widget {
-            overflow: hidden;
-            position: relative;
-            margin-top: 15px;
-            h4 {
-                color: inherit;
-            }
-            &.widget-links {
-                ul {
-                    list-style: none;
-                    padding: 0;
-                    margin: 0;
-                    li {
-                        display: block;
-                        a {
-                            display: block;
-                            &:hover {
-                                color: $primary;
-                            }
-                        }
-                        .icon {
-                            top: -1px;
-                            font-size: 9px;
-                            margin-right: 3px;
-                            position: relative;
-                        }
-                    }
-                }
-            }
+        z-index: 3;
+        position: relative;
+    }
+    .footer-copyright {
+        z-index: 3;
+        position: relative;
+        p {
+            font-weight: inherit;
         }
     }
-    &.app-footer-0 {
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 57px;
-        color: $text-color;
-        z-index: 999;
+    &:before,
+    &:after {
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        content: "";
+        z-index: 0;
         position: absolute;
-        padding-bottom: 30px;
-        border-bottom: 6px solid $primary;
-        p,
-        ul li {
-            line-height: 45px !important;
-        }
-        p {
-            text-align: right;
-            line-height: 81px;
-        }
-        ul {
-            li {
-                a {
-                    font-weight: 600;
-                }
-            }
-        }
-        .el-select-languages {
-            padding-top: 7px;
-        }
-        &.glass {
-            color: #ccc;
-            background-color: rgba(0, 0, 0, 0.45);
-        }
     }
-    &.app-footer-1 {
-        color: #ccc;
+    &:before {
+        left: 0;
+        border-bottom-left-radius: 50%;
+    }
+    &:after {
+        right: 0;
+        border-bottom-right-radius: 50%;
+    }
+}
+
+// Shapes
+.app-footer {
+    .el-shape {
         position: relative;
-        background-color: #222;
-        .footer-widgets {
-            .widget {
-                .widget-title {
-                    h4 {
-                        color: $base-0;
-                    }
-                }
+        .circle {
+            top: -10px;
+            width: 50%;
+            position: absolute;
+            &.circle-1 {
+                left: 2px;
+                fill: $secondary;
+                fill: #ffd128;
+                transform: rotate(180deg);
             }
-        }
-        .footer-copyright {
-            color: $primary;
-            text-align: left;
-            padding-top: $space / 5;
-            padding-bottom: $space / 5;
-            background-color: $base-1;
-            .text-bold {
-                font-weight: 700;
+            &.circle-2 {
+                top: -3px;
+                right: 2px;
+                fill: $primary;
+                transform: rotate(90deg);
             }
-            .text-2 {
-                top: 0;
-                right: 15px;
-                position: absolute;
-            }
-        }
-    }
-    &.app-footer-2 {
-        color: $text-color;
-        position: relative;
-        border-bottom: 6px solid $primary;
-        .footer-widgets {
-            .widget {
-                .widget-title {
-                    h4 {
-                        color: $base-1;
-                    }
-                }
-            }
-        }
-        .footer-copyright {
-            color: $text-color;
-            text-align: left;
-            padding-top: $space / 5;
-            padding-bottom: $space / 5;
-            .text-bold {
-                font-weight: 700;
-            }
-            .text-2 {
-                top: 0;
-                right: 15px;
-                position: absolute;
-            }
-        }
-    }
-    &.app-footer-4 {
-        color: $text-color;
-        height: 57px !important;
-        padding-bottom: 30px;
-        border-bottom: 6px solid $primary;
-        p {
-            text-align: right;
-            line-height: 81px;
-        }
-        ul {
-            li {
-                a {
-                    font-weight: 600;
-                }
-            }
-        }
-        .el-select-languages {
-            padding-top: 28px;
         }
     }
 }
 
-@media (max-width: 768px) {
-    .app-footer {
-        .footer-copyright {
-            p {
-                left: 0 !important;
-                right: 0 !important;
-                width: 100%;
-                text-align: center;
-                margin-bottom: 6px;
-                position: relative !important;
-                display: block !important;
+// Widgets
+.el-widget {
+    overflow: hidden;
+    position: relative;
+    min-height: 210px;
+    margin-bottom: $space;
+    .el-widget-head {
+        h3 {
+            color: $base-0;
+            font-size: 1.5625rem;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    .el-widget-body {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: block;
+                margin-bottom: 9px;
             }
         }
     }
