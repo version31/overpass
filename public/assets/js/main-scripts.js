@@ -6,6 +6,7 @@
         Launch: function () {
             fn.Test();
             fn.Slider();
+            fn.DataFilter();
         },
         Test: function () {},
         Slider: function () {
@@ -80,6 +81,28 @@
                         // centeredSlides: true,
                     },
                 },
+            });
+        },
+        DataFilter: function () {
+            var className = "active";
+            var link = $(".el-data-filters .el-data-filters-links ul");
+
+            link.on("click", "li", function () {
+                var links = $(this).siblings("li");
+                var filter = $(this).attr("data-filter");
+                var items = $(this).parent().parent().siblings(".el-data-filters-content").children("ul").children("li");
+
+                console.log($(this).parent().parent());
+
+                links.removeClass(className);
+                $(this).addClass(className);
+
+                if (filter == "all") {
+                    items.show(600);
+                } else {
+                    items.hide();
+                    $("li[data-filter=" + filter + "]").show(600);
+                }
             });
         },
     };
