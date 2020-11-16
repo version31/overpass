@@ -46,7 +46,7 @@
                     el: ".el-slider-pagination",
                     clickable: true,
                     renderBullet: function (index, className) {
-                        return '<div class="el-slider-dots-item ' + className + '"><div className="author-avatar"><img src="assets/images/people/1-' + (index + 1) + '.jpg"></div><span class="icon"><svg data-index="' + index + '" viewBox="0 0 14 14" width="105" height="105" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2.5" class="chip"></circle><circle fill="none" stroke-width=".3" stroke-miterlimit="10" cx="7" cy="7" r="6" class="progress-1"></circle><circle fill="none" stroke-width=".3" stroke-miterlimit="10" cx="7" cy="7" r="6" class="progress-2"></circle></svg></span></div>';
+                        return '<div class="el-slider-dots-item ' + className + '"><div class="author-avatar"><img src="assets/images/people/1-' + (index + 1) + '.jpg"></div><span class="icon"><svg data-index="' + index + '" viewBox="0 0 14 14" width="120" height="120" xmlns="http://www.w3.org/2000/svg"><circle cx="7" cy="7" r="2.5" class="chip"></circle><circle fill="none" stroke-width=".3" stroke-miterlimit="10" cx="7" cy="7" r="6" class="progress-1"></circle><circle fill="none" stroke-width=".3" stroke-miterlimit="10" cx="7" cy="7" r="6" class="progress-2"></circle></svg></span></div>';
                     },
                 },
             });
