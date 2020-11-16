@@ -201,18 +201,22 @@
     padding-top: 200% !important;
 }
 .pt-space {
+    z-index: 3;
     position: relative;
     padding-top: $space !important;
 }
 .pb-space {
+    z-index: 3;
     position: relative;
     padding-bottom: $space !important;
 }
 .mt-space {
+    z-index: 3;
     position: relative;
     margin-top: $space !important;
 }
 .mb-space {
+    z-index: 3;
     position: relative;
     margin-bottom: $space !important;
 }

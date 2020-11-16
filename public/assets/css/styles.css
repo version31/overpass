@@ -1503,21 +1503,25 @@ h6,
 }
 
 .pt-space {
+  z-index: 3;
   position: relative;
   padding-top: 100px !important;
 }
 
 .pb-space {
+  z-index: 3;
   position: relative;
   padding-bottom: 100px !important;
 }
 
 .mt-space {
+  z-index: 3;
   position: relative;
   margin-top: 100px !important;
 }
 
 .mb-space {
+  z-index: 3;
   position: relative;
   margin-bottom: 100px !important;
 }
@@ -6368,6 +6372,84 @@ section .el-shape-bg .el-shape {
 }
 
 /*------------------------------------
+    Element: Tabs
+------------------------------------*/
+.el-data-filters {
+  overflow: hidden;
+  position: relative;
+}
+
+.el-data-filters .el-data-filters-links {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.el-data-filters .el-data-filters-links::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.el-data-filters .el-data-filters-links::-webkit-scrollbar-thumb {
+  height: 0;
+  width: 0;
+}
+
+.el-data-filters .el-data-filters-links::-webkit-scrollbar-track {
+  height: 0;
+  width: 0;
+}
+
+.el-data-filters .el-data-filters-links .el-data-filter-title {
+  float: left;
+  height: 50px;
+  color: var(--base-0);
+  line-height: 50px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+
+.el-data-filters .el-data-filters-links ul {
+  display: inline-block;
+  list-style: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  white-space: nowrap;
+  padding: 0;
+  margin: 0 0 30px;
+}
+
+.el-data-filters .el-data-filters-links ul li {
+  color: var(--base-0);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.el-data-filters .el-data-filters-links ul li.active {
+  color: var(--base-1);
+  cursor: inherit;
+  background-color: var(--base-0);
+}
+
+.el-data-filters .el-data-filters-content {
+  min-height: 300px;
+}
+
+.el-data-filters .el-data-filters-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .el-data-filters .el-data-filters-links ul li {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+/*------------------------------------
     Sections Styles
 ------------------------------------*/
 /*------------------------------------
@@ -7259,6 +7341,41 @@ section .el-shape-bg .el-shape {
 .el-swiper-portfolio-3 .item {
   padding-top: 66%;
   background-color: var(--gray);
+}
+
+.section-portfolio.section-portfolio-2 {
+  background-color: var(--primary-1);
+}
+
+.section-portfolio.section-portfolio-2 .el-shape {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  position: absolute;
+}
+
+.section-portfolio.section-portfolio-2 .el-shape .circle.circle-1 {
+  top: -50%;
+  left: -50%;
+  width: 100%;
+  fill: var(--primary);
+  position: absolute;
+}
+
+.section-portfolio.section-portfolio-2 .el-shape .circle.circle-2 {
+  right: -50%;
+  bottom: -50%;
+  width: 100%;
+  fill: var(--secondary);
+  position: absolute;
+}
+
+.section-portfolio.section-portfolio-2 .el-item {
+  padding-top: 30%;
+  background-color: var(--base-0);
 }
 
 /*------------------------------------
