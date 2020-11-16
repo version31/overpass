@@ -114,7 +114,7 @@
   --secondary-3: #f8a438;
   --text-color: #687086;
   --color-1: #f9b8c4;
-  --color-2: #c670fe;
+  --color-2: #38B349;
   --color-3: #fec070;
   --color-4: #dc3545;
   --color-5: #28a745;
@@ -6389,27 +6389,51 @@ section .el-shape-bg .el-shape {
   background-color: var(--primary);
 }
 
-.section-hero .hero-right .el-shape {
-  top: 0;
-  right: 0;
-  left: calc(1.25 * var(--vw));
-  z-index: 0;
-  width: 34.93056vw;
-  width: calc(34.93056 * var(--vw));
-  height: 35.55556vw;
-  height: calc(35.55556 * var(--vw));
-  display: block;
-  position: absolute;
-  -webkit-transform: translate(-50%, -56%);
-          transform: translate(-50%, -56%);
-  pointer-events: none;
-  background-color: var(--secondary);
-}
-
 .section-hero .hero-slider .el-item {
   height: 100vh;
   overflow: hidden;
   position: relative;
+}
+
+.section-hero .el-shape {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+}
+
+.section-hero .el-shape .circle {
+  z-index: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.section-hero .el-shape .circle.circle-1 {
+  left: -60%;
+  bottom: -69%;
+  width: 100%;
+  fill: var(--color-1);
+}
+
+.section-hero .el-shape .circle.circle-2 {
+  top: -50%;
+  right: -50%;
+  width: 120%;
+  fill: var(--color-2);
+}
+
+.section-hero .el-shape .circle.circle-3 {
+  top: -30%;
+  left: 0;
+  right: 0;
+  width: 30%;
+  margin: auto;
+  fill: var(--secondary);
+}
+
+.section-hero.section-hero-2 .hero-right {
+  background-color: var(--primary-1);
 }
 
 /*------------------------------------
