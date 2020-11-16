@@ -14,10 +14,12 @@
     --base-1: #1e2432;
     --primary: #0099ff;
     --primary-1: #1a49ba;
+    --primary-2: #1a49ba;
     --primary-3: #1a49ba;
     --secondary: #00c9b7;
     --secondary: #ffda54;
     --secondary-1: #f8a438;
+    --secondary-2: #f8a438;
     --secondary-3: #f8a438;
     --text-color: #687086;
     --color-1: #f9b8c4;
@@ -41,9 +43,12 @@ $base-3: var(--base-3);
 $default: var(--default);
 $primary: var(--primary);
 $primary-1: var(--primary-1);
+$primary-2: var(--primary-2);
 $primary-3: var(--primary-3);
 $secondary: var(--secondary);
 $secondary-1: var(--secondary-1);
+$secondary-2: var(--secondary-2);
+$secondary-3: var(--secondary-3);
 $text-color: var(--text-color);
 $color-1: var(--color-1);
 $color-2: var(--color-2);
@@ -86,7 +91,7 @@ $space: 100px;
 
 // Heading
 $h1: 69px;
-$h2: 36px;
+$h2: 42px;
 $h3: 27px;
 $h4: 24px;
 $h5: 18px;

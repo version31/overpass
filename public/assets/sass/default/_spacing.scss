@@ -65,8 +65,8 @@
     margin-right: 0 !important;
     margin-bottom: 0 !important;
     & > * {
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
     }
 }
 .row-xs {
@@ -201,15 +201,19 @@
     padding-top: 200% !important;
 }
 .pt-space {
+    position: relative;
     padding-top: $space !important;
 }
 .pb-space {
+    position: relative;
     padding-bottom: $space !important;
 }
 .mt-space {
+    position: relative;
     margin-top: $space !important;
 }
 .mb-space {
+    position: relative;
     margin-bottom: $space !important;
 }
 .pt-space-half {
@@ -224,7 +228,7 @@
 .mb-space-half {
     margin-bottom: $space / 2 !important;
 }
-@each $i in (5, 10, 15, 18, 20, 24, 25, 30, 35, 40, 45, 50, 75, 80, 85, 90, 95, 100) {
+@each $i in (5, 10, 15, 18, 20, 24, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100) {
     .pt-#{$i} {
         padding-top: unquote(($i) + "px") !important;
     }
