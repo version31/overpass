@@ -6289,7 +6289,7 @@ section .el-shape-bg .el-shape {
   stroke: var(--base-1);
 }
 
-.section-quotes .el-slider .el-slider-dots .el-slider-pagination .swiper-pagination-bullet:hover img {
+.section-quotes .el-slider .el-slider-dots .el-slider-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active):hover img {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.23, 0.98, 0.62, 1.58);
