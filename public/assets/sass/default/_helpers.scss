@@ -3,6 +3,10 @@
     Helpers
 ------------------------------------*/
 
+.no-scroll-bar {
+    @include no-scroll-bar();
+}
+
 // Text Helpers
 .text-bold {
     font-weight: bold;
@@ -256,11 +260,23 @@
 .bg-primary-1 {
     background-color: $primary-1 !important;
 }
+.bg-primary-2 {
+    background-color: $primary-2 !important;
+}
 .bg-primary-3 {
     background-color: $primary-3 !important;
 }
 .bg-secondary {
     background-color: $secondary !important;
+}
+.bg-secondary-1 {
+    background-color: $secondary-1 !important;
+}
+.bg-secondary-2 {
+    background-color: $secondary-2 !important;
+}
+.bg-secondary-3 {
+    background-color: $secondary-3 !important;
 }
 .bo-color-1 {
     border-color: $color-1 !important;
@@ -343,6 +359,9 @@
 }
 .bg-light {
     background-color: $white !important;
+}
+.bg-light-2 {
+    background-color: #f7f9fb !important;
 }
 .bg-dark {
     background-color: $black !important;
