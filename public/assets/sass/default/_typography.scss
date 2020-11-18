@@ -72,13 +72,13 @@ h6,
 }
 h1,
 .h1 {
-    font-size: $h1;
+    font-size: $h1 !important;
     line-height: 1.2;
     font-weight: 700;
 }
 h2,
 .h2 {
-    font-size: $h2;
+    font-size: $h2 !important;
     line-height: 1.4;
     font-weight: 700;
 }
