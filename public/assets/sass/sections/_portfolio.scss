@@ -2,11 +2,18 @@
     Section: Portfolio
 ------------------------------------*/
 
-.el-swiper-portfolio-3 {
-    overflow: initial !important;
+.section-portfolio {
+    .swiper-container {
+        overflow: initial !important;
+    }
     .item {
         padding-top: 66%;
         background-color: $gray;
+    }
+}
+.el-swiper-portfolio-3 {
+    .item {
+        padding-top: 66%;
     }
 }
 
@@ -42,5 +49,84 @@
             padding-top: 30%;
             background-color: $base-0;
         }
-    }   
+    }
+}
+.section-portfolio {
+    &.section-portfolio-3 {
+        .el-shape {
+            top: 0;
+            left: calc(29.16667 * var(--vw));
+            left: 29.16667vw;
+            left: calc(50vw - 20.83333 * var(--vw));
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            position: absolute;
+            background-color: $primary-1;
+            .circle-1 {
+                top: -90%;
+                right: -60%;
+                width: 123%;
+                fill: $primary;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.section-portfolio {
+    &.section-portfolio-4 {
+        background-color: $primary;
+        .item {
+            padding-top: 120%;
+        }
+        .el-shape {
+            top: 0;
+            left: calc(29.16667 * var(--vw));
+            left: 29.16667vw;
+            left: calc(50vw - 20.83333 * var(--vw));
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            position: absolute;
+            background-color: $primary-1;
+            .circle-2 {
+                left: -20%;
+                bottom: -40%;
+                width: 60%;
+                fill: $secondary;
+                position: absolute;
+            }
+        }
+    }
+}
+
+.section-portfolio {
+    &.section-portfolio-5 {
+        .item {
+            padding-top: 120%;
+        }
+        .el-shape {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: calc(100% - 100px);
+            overflow: hidden;
+            position: absolute;
+            background-color: $primary-1;
+            .circle-3 {
+                top: 30%;
+                right: -25%;
+                width: 50%;
+                fill: $secondary;
+                position: absolute;
+            }
+        }
+        .el-heading {
+            width: 100% !important;
+            h2 {
+                font-size: $h1;
+            }
+        }
+    }
 }

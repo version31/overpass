@@ -82,6 +82,68 @@
                     },
                 },
             });
+            var mySwiper = new Swiper(".el-swiper-portfolio-4", {
+                loop: false,
+                navigation: {
+                    nextEl: ".el-slider-next",
+                    prevEl: ".el-slider-prev",
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 12,
+                    },
+                    576: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 12,
+                    },
+                    768: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 18,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 18,
+                    },
+                    1200: {
+                        loop: false,
+                        spaceBetween: 20,
+                        slidesPerView: 3.3,
+                        // centeredSlides: true,
+                    },
+                },
+            });
+            var mySwiper = new Swiper(".el-swiper-portfolio-5", {
+                loop: false,
+                navigation: {
+                    nextEl: ".el-slider-next",
+                    prevEl: ".el-slider-prev",
+                },
+                breakpoints: {
+                    0: {
+                        slidesPerView: 1.2,
+                        spaceBetween: 12,
+                    },
+                    576: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 12,
+                    },
+                    768: {
+                        slidesPerView: 1.8,
+                        spaceBetween: 18,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 18,
+                    },
+                    1200: {
+                        loop: false,
+                        spaceBetween: 20,
+                        slidesPerView: 3.3,
+                        // centeredSlides: true,
+                    },
+                },
+            });
         },
         DataFilter: function () {
             var className = "active";
