@@ -10,37 +10,6 @@
         border-radius: 50%;
     }
 }
-.el-shape-bg {
-    top: 0;
-    left: calc(29.16667 * var(--vw));
-    left: 29.16667vw;
-    left: calc(50vw - 20.83333 * var(--vw));
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    position: absolute;
-    background-color: $primary-1;
-
-    .el-shape {
-        top: -93%;
-        right: -57%;
-        width: 123%;
-        fill: $primary;
-        position: absolute;
-    }
-}
-
-section {
-    .el-shape-bg {
-        .el-shape {
-            top: -93%;
-            right: -57%;
-            width: 123%;
-            fill: $primary;
-            position: absolute;
-        }
-    }
-}
 
 .story-item {
     .el-shape {
@@ -91,9 +60,8 @@ section {
 // Heading - 1
 .el-heading {
     &.el-heading-1 {
-        width: 26vw;
-        width: calc(26 * var(--vw));
-        margin-bottom: 60px;
+        width: 28vw;
+        width: calc(28 * var(--vw));
         h1,
         h2,
         h3 {
@@ -118,7 +86,18 @@ section {
                 margin-bottom: 6px;
                 border-bottom: 3px solid $base-1;
             }
+            &.text-light {
+                span {
+                    border-color: $base-0;
+                }
+            }
         }
+    }
+}
+
+@media (max-width: 992px) {
+    .el-heading {
+        width: 36vw !important;
     }
 }
 
@@ -386,12 +365,14 @@ section {
     }
     .el-slider {
         .el-slider-pagination {
-            top: 9px;
-            left: 6%;
+            top: 15px;
+            left: 4.5vw;
+            left: calc(4.5 * var(--vw));
             position: relative;
             .title {
-                top: 3px;
-                left: 72px;
+                top: 6px;
+                padding-left: 4.5vw;
+                padding-left: calc(4.5 * var(--vw));
                 color: $base-0;
                 opacity: 0;
                 font-size: 14px;
@@ -399,7 +380,6 @@ section {
                 font-weight: 600;
                 position: absolute;
                 margin-bottom: 0;
-                transform: translate(0, 30px);
                 transition: all 600ms;
                 span {
                     display: block;
@@ -420,8 +400,8 @@ section {
         .el-slider-nav {
             right: 0;
             bottom: 0;
-            width: 12.6vw;
-            width: calc(12.6 * var(--vw));
+            width: 12vw;
+            width: calc(12 * var(--vw));
             height: 30vh;
             z-index: 30;
             position: absolute;
@@ -430,8 +410,8 @@ section {
         .el-slider-dots {
             left: 0;
             bottom: 0;
-            width: 78.6vw;
-            width: calc(78.6 * var(--vw));
+            width: 38vw;
+            width: calc(38 * var(--vw));
             height: 30vh;
             z-index: 27;
             position: absolute;
@@ -440,6 +420,18 @@ section {
     }
 }
 
+@media (max-width: 992px) {
+    .section-hero {
+        .el-slider {
+            .el-slider-prev,
+            .el-slider-next {
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+        }
+    }
+}
 
 /*------------------------------------
     Element: Tabs
@@ -471,7 +463,7 @@ section {
                 color: $base-0;
                 cursor: pointer;
                 position: relative;
-                background-color: rgba(255,255,255,.45);
+                background-color: rgba(255, 255, 255, 0.45);
                 &.active {
                     color: $base-1;
                     cursor: inherit;

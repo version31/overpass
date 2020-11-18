@@ -280,3 +280,10 @@
         max-width: 1300px !important;
     }
 }
+
+.container {
+    width: inherit !important;
+    max-width: inherit !important;
+    padding: 0 9vw !important;
+    padding: 0 calc(9 * var(--vw)) !important;
+}

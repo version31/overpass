@@ -23,7 +23,7 @@
     --secondary-3: #f8a438;
     --text-color: #687086;
     --color-1: #f9b8c4;
-    --color-2: #38B349;
+    --color-2: #38b349;
     --color-3: #fec070;
     --color-4: #dc3545;
     --color-5: #28a745;
@@ -91,7 +91,9 @@ $space: 100px;
 
 // Heading
 $h1: 69px;
+$h1: calc(4.5 * var(--vw)); 
 $h2: 42px;
+$h2: calc(3.05556 * var(--vw));
 $h3: 27px;
 $h4: 24px;
 $h5: 18px;
