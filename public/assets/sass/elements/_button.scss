@@ -8,6 +8,7 @@
     position: relative;
     text-align: center;
     display: inline-block;
+    outline: none !important;
     &.button-icon {
         height: 30px;
         .text {
