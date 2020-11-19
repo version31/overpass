@@ -78,6 +78,11 @@
                 transform: none !important;
             }
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-features-1 {
         .display-custom {
             position: relative;
             padding-bottom: $space;
