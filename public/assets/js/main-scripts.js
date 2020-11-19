@@ -11,7 +11,7 @@
         Test: function () {},
         Slider: function () {
             var title = ["Marcus A.", "Marcus B.", "Marcus C."];
-            var subtitle = ["Top Rated Sales Expert", "Top Rated Customer Support Rep", "Top Rated Customer Support Rep"];
+            var subtitle = ["Top Rated Sales Expert", "Top Rated Sales Expert", "Top Rated Sales Expert"];
             var mySwiper = new Swiper(".el-swiper-hero-1", {
                 loop: true,
                 autoplay: {
