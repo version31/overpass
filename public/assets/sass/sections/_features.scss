@@ -15,7 +15,8 @@
 .el-feature {
     position: relative;
     background-color: $base-0;
-    padding: calc(4.79167 * var(--vw)) calc(3.47222 * var(--vw));
+    padding: 3vw 3vw;
+    padding: calc(3 * var(--vw)) calc(3 * var(--vw));
     p {
         opacity: 0;
         visibility: hidden;
