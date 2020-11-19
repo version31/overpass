@@ -29,11 +29,10 @@
                         left: calc(4.5 * var(--vw));
                         position: relative;
                         .title {
-                            top: 9px;
+                            top: 6px;
                             padding-left: 4.5vw;
                             padding-left: calc(4.5 * var(--vw));
                             color: $base-0;
-                            opacity: 0;
                             font-size: 14px;
                             visibility: hidden;
                             font-weight: 600;
@@ -84,6 +83,7 @@
                     border: 2px solid yellow;
                     .el-item-image {
                         padding-top: 70vh;
+                        background-color: $primary;
                         background: no-repeat center center / cover;
                         img {
                             top: 0;
@@ -154,6 +154,27 @@
                 position: relative;
                 &.hero-right {
                     .hero-slider {
+                        .el-item {
+                            height: 90vh;
+                            overflow: hidden;
+                            position: relative;
+                            border: 2px solid yellow;
+                            .el-item-image {
+                                padding-top: 60vh;
+                                background-color: $primary;
+                                img {
+                                    top: 0;
+                                    left: 0;
+                                    right: 0;
+                                    width: auto;
+                                    height: 70vh;
+                                    opacity: 0;
+                                    max-width: inherit;
+                                    margin: auto;
+                                    position: relative;
+                                }
+                            }
+                        }
                         .el-slider {
                             .el-slider-prev,
                             .el-slider-next {
@@ -177,7 +198,6 @@
                     }
                 }
             }
-
             .el-heading {
                 margin-bottom: $space;
             }
@@ -187,6 +207,23 @@
                 position: relative !important;
                 padding-top: 30px !important;
                 transform: none !important;
+            }
+            .el-shape {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                position: absolute;
+                text-align: center;
+                .circle {
+                    &.circle-3 {
+                        top: 36%;
+                        left: -100%;
+                        right: 0;
+                        width: 100%;
+                        margin: auto;
+                        fill: $secondary;
+                    }
+                }
             }
         }
     }

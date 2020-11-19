@@ -52,3 +52,35 @@
         }
     }
 }
+
+@media (max-width: 992px) {
+    .section-features-1 {
+        .el-feature {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            background-color: #f7f9fb !important;
+            p {
+                display: none;
+            }
+            h3 {
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+            .button {
+                right: 12px;
+                bottom: 12px;
+                position: absolute;
+            }
+        }
+        &.el-hover {
+            &:hover {
+                transform: none !important;
+            }
+        }
+        .display-custom {
+            position: relative;
+            padding-bottom: $space;
+        }
+    }
+}

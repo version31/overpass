@@ -159,6 +159,9 @@
                     display: inline-block !important;
                 }
             }
+            h2 {
+                font-size: 30px !important;
+            }
         }
     }
 }
@@ -166,6 +169,7 @@
     .el-heading {
         &.el-heading-1 {
             width: 100%;
+            text-align: center;
         }
     }
 }
