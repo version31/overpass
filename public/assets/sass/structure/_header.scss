@@ -57,6 +57,7 @@
                     display: block;
                     position: relative;
                     background-color: $base-1;
+                    transition: all 450ms;
                 }
                 &:before {
                     top: -10px;
@@ -65,6 +66,19 @@
                 &:after {
                     bottom: -8px;
                     content: "";
+                }
+            }
+            &.active {
+                span {
+                    background-color: transparent;
+                    &:before {
+                        background-color: $base-1;
+                        transform: rotate(45deg) translate(9px, 9px);
+                    }
+                    &:after {
+                        background-color: $base-1;
+                        transform: rotate(-45deg) translate(6px, -6px);
+                    }
                 }
             }
         }

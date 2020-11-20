@@ -6,6 +6,7 @@
         Launch: function () {
             fn.Test();
             fn.Slider();
+            fn.Sidenav();
             fn.DataFilter();
         },
         Test: function () {},
@@ -143,6 +144,18 @@
                         // centeredSlides: true,
                     },
                 },
+            });
+        },
+        Sidenav: function () {
+            var button = $(".button-display-sidenav");
+            var sidenav = $(".app-sidenav");
+            button.on("click", function (e) {
+                e.preventDefault();
+                $(this).toggleClass("active");
+                sidenav.toggleClass("active");
+            });
+            sidenav.on("click", ".button-close-sidenav, .sidenav-close", function () {
+                sidenav.removeClass("active");
             });
         },
         DataFilter: function () {
