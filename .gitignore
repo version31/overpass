@@ -2,6 +2,7 @@ node_modules/
 public/assets/css/styles.css.map
 public/assets/css/styles.css
 public/*.html
+publicrtl
 package.json
 package-lock.json
 workspace.code-workspace
