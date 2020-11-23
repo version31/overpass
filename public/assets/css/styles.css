@@ -5816,7 +5816,9 @@ Reset
 
 .el-feature .button {
   float: right;
+  margin-bottom: 15px;
   position: relative;
+  background-color: #fff;
 }
 
 .el-hover {
@@ -5834,10 +5836,6 @@ Reset
   z-index: 3;
   -webkit-transform: translate(0, -20px);
           transform: translate(0, -20px);
-  -webkit-box-shadow: 0 1.38889vw 2.77778vw rgba(0, 0, 0, 0.05);
-          box-shadow: 0 1.38889vw 2.77778vw rgba(0, 0, 0, 0.05);
-  -webkit-box-shadow: 0 calc(1.38889 * var(--vw)) calc(2.77778 * var(--vw)) rgba(0, 0, 0, 0.05);
-          box-shadow: 0 calc(1.38889 * var(--vw)) calc(2.77778 * var(--vw)) rgba(0, 0, 0, 0.05);
 }
 
 .el-hover:hover p {
