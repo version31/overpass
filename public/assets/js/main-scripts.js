@@ -7,6 +7,7 @@
             fn.Test();
             fn.Slider();
             fn.Sidenav();
+            fn.Paroller();
             fn.DataFilter();
         },
         Test: function () {},
@@ -157,6 +158,10 @@
             sidenav.on("click", ".button-close-sidenav, .sidenav-close", function () {
                 sidenav.removeClass("active");
             });
+        },
+        Paroller: function () {
+            $(".el-heading-2 .el-big-title").paroller({ factor: 0.5, factorXs: 0.2, type: "foreground", direction: "horizontal" });
+            $(".section-hero .el-item-image").paroller({ factor: -0.3, type: "foreground"});
         },
         DataFilter: function () {
             var className = "active";

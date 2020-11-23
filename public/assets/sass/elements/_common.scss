@@ -56,9 +56,12 @@
 // Heading - 2
 .el-heading {
     &.el-heading-2 {
+        white-space: nowrap;
+        text-align: center;
         padding-top: $space * 2;
         padding-bottom: $space * 2;
         h2 {
+            text-align: center;
             line-height: 1;
             font-size: 6.3rem !important;
             font-weight: 400;

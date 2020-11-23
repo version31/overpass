@@ -80,17 +80,17 @@
                     height: 100vh;
                     overflow: hidden;
                     position: relative;
-                    border: 2px solid yellow;
                     .el-item-image {
-                        padding-top: 70vh;
+                        padding-top: 100vh;
                         background-color: $primary;
-                        background: no-repeat center center / cover;
+                        background: repeat center; 
+                        background-size: cover;
                         img {
                             top: 0;
                             left: 0;
                             right: 0;
                             width: auto;
-                            height: 70vh;
+                            height: 100vh;
                             max-width: inherit;
                             margin: auto;
                             position: relative;
