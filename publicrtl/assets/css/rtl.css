@@ -375,17 +375,11 @@ body {
 }
 
 .app-footer .el-shape .circle.circle-1 {
-  left: inherit;
-  right: 2px;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  fill: #0099ff;
 }
 
 .app-footer .el-shape .circle.circle-2 {
-  right: inherit;
-  left: 2px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  fill: #ffda54;
 }
 
 .section-hero.section-hero-1 .hero-right {

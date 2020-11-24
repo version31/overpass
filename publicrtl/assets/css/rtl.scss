@@ -376,14 +376,10 @@ body {
     .el-shape {
         .circle {
             &.circle-1 {
-                left: inherit;
-                right: 2px;
-                transform: rotate(0deg);
+                fill: #0099ff;
             }
             &.circle-2 {
-                right: inherit;
-                left: 2px;
-                transform: rotate(-90deg);
+                fill: #ffda54;
             }
         }
     }
