@@ -1,0 +1,118 @@
+/*------------------------------------
+    Variables
+------------------------------------*/
+
+:root {
+    --vw: 1vw;
+    --gray: #eee;
+    --white: #fff;
+    --black: #000;
+    --base: #fff;
+    --base-0: #fff;
+    --base-1: #151812;
+    --base-1: #152c5b;
+    --base-1: #1e2432;
+    --primary: #0099ff;
+    --primary-1: #1a49ba;
+    --primary-2: #1a49ba;
+    --primary-3: #1a49ba;
+    --secondary: #00c9b7;
+    --secondary: #ffda54;
+    --secondary-1: #f8a438;
+    --secondary-2: #f8a438;
+    --secondary-3: #f8a438;
+    --text-color: #687086;
+    --color-1: #f9b8c4;
+    --color-2: #38b349;
+    --color-3: #fec070;
+    --color-4: #dc3545;
+    --color-5: #28a745;
+    --color-6: darkblue;
+    --default: rgb(252, 255, 235);
+    --font-family-1: "Poppins", sans-serif;
+    --font-family-2: "Poppins", sans-serif;
+    --font-family-3: "Poppins", sans-serif;
+}
+
+// Colors
+$gray: var(--gray);
+$white: var(--white);
+$black: var(--black);
+$base: var(--base);
+$base-0: var(--base-0);
+$base-1: var(--base-1);
+$base-2: var(--base-2);
+$base-3: var(--base-3);
+$default: var(--default);
+$primary: var(--primary);
+$primary-1: var(--primary-1);
+$primary-2: var(--primary-2);
+$primary-3: var(--primary-3);
+$secondary: var(--secondary);
+$secondary-1: var(--secondary-1);
+$secondary-2: var(--secondary-2);
+$secondary-3: var(--secondary-3);
+$text-color: var(--text-color);
+$color-1: var(--color-1);
+$color-2: var(--color-2);
+$color-3: var(--color-3);
+$color-4: var(--color-4);
+$color-5: var(--color-5);
+$color-6: var(--color-6);
+$success: green;
+$warning: #f6931c;
+$danger: red;
+
+// Social
+$google: #b23121;
+$twitter: #1da1f2;
+$linkedin: #0e76a8;
+$facebook: #3b5998;
+$instagram: #e1306c;
+$instagram: #c13584;
+$pinterest: #bd081c;
+$pinterest: #b23121;
+
+// Font Family
+// $font-family-1: 'Jost', sans-serif;
+// $font-family-1: 'Open Sans', sans-serif;
+// $font-family-1: 'Helvetica', sans-serif;
+// $font-family-1: 'Nunito Sans', sans-serif;
+// $font-family-1: 'Cairo', sans-serif;
+// $font-family-2: 'Cairo', sans-serif;
+// $font-family-3: 'Cairo', sans-serif;
+$font-family-1: var(--font-family-1);
+$font-family-2: var(--font-family-2);
+$font-family-3: var(--font-family-3);
+
+// Grid
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1230px;
+$space: 100px;
+
+// Heading
+$h1: 69px;
+$h1: calc(4.5 * var(--vw)); 
+$h2: 42px;
+$h2: calc(3.05556 * var(--vw));
+$h3: 27px;
+$h4: 24px;
+$h5: 18px;
+$h6: 16px;
+$heading-font: $font-family-1;
+$heading-color: $base-1;
+
+// Container Width
+$container-xs: 480px;
+$container-sm: 750px;
+$container-md: 970px;
+$container-lg: 1200px;
+$container-xl: 1800px;
+
+$default-br: 9px;
+$default-br: 12px;
+$default-bs: 0 3px 6px 0 rgba(140, 152, 164, 0.25);
+$default-bs-2: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+$default-bs-hover: 0 3px 1px 0 $primary;

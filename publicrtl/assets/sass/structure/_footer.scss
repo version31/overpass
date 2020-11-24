@@ -1,0 +1,168 @@
+/*------------------------------------
+    Footer
+------------------------------------*/
+
+// Default
+.app-footer {
+    color: $base-0;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+    background-color: $primary-1;
+    p {
+        color: inherit;
+        margin-bottom: 20px;
+    }
+    .footer-logo {
+        svg {
+            top: -12px;
+            fill: $base-0;
+            position: relative;
+            margin-right: 15px;
+        }
+        .text {
+            top: 0;
+            font-size: 18px;
+            position: absolute;
+        }
+    }
+    .footer-widgets {
+        z-index: 3;
+        position: relative;
+    }
+    .footer-copyright {
+        z-index: 3;
+        position: relative;
+        p {
+            font-weight: inherit;
+        }
+    }
+    &:before,
+    &:after {
+        top: 0;
+        width: 50%;
+        height: 100vh;
+        content: "";
+        z-index: 0;
+        position: absolute;
+    }
+    &:before {
+        left: 0;
+        border-bottom-left-radius: 50%;
+    }
+    &:after {
+        right: 0;
+        border-bottom-right-radius: 50%;
+    }
+}
+
+// Shapes
+.app-footer {
+    .el-shape {
+        position: relative;
+        .circle {
+            top: -10px;
+            width: 50%;
+            position: absolute;
+            &.circle-1 {
+                left: 2px;
+                fill: $secondary;
+                fill: #ffd128;
+                transform: rotate(180deg);
+            }
+            &.circle-2 {
+                top: -7px;
+                right: 2px;
+                fill: $primary;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+// Widgets
+.el-widget {
+    overflow: hidden;
+    position: relative;
+    min-height: 210px;
+    margin-bottom: $space;
+    .el-widget-head {
+        h3 {
+            color: #fff;
+            font-size: 1.5625rem;
+            display: block;
+            margin-bottom: 30px;
+        }
+    }
+    .el-widget-body {
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+                display: block;
+                margin-bottom: 9px;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .app-footer {
+        .footer-logo {
+            display: block;
+            margin-bottom: $space / 2;
+            svg {
+                top: 0;
+                display: block;
+                margin: auto;
+            }
+            .text {
+                top: 0;
+                width: 100%;
+                display: block;
+                font-size: 18px;
+                position: relative;
+                text-align: center;
+            }
+        }
+        .footer-widgets {
+            .pt-space {
+                padding-top: $space / 2 !important;
+            }
+        }
+        .footer-copyright {
+            p {
+                top: 3px;
+                position: relative;
+            }
+        }
+        .el-shape {
+            .circle {
+                width: 100%;
+            }
+        }
+    }
+    .el-widget {
+        margin-bottom: 0 !important;
+        .el-widget-head {
+            h3 {
+                font-size: 21px;
+                margin-bottom: 15px;
+            }
+        }
+        &.el-widget-welcome {
+            text-align: center;
+            .button {
+                width: 100%;
+                display: block;
+                &.button-dark {
+                    background-color: $primary !important;
+                }
+            }
+        }
+        &.el-widget-support {
+            display: none;
+        }
+    }
+}

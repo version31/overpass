@@ -1,0 +1,105 @@
+/*------------------------------------
+    Header
+------------------------------------*/
+
+.app-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    color: $base-1;
+    z-index: 999;
+    position: absolute;
+    .header-logo {
+        top: 21px;
+        left: 15px;
+        width: 60px;
+        position: absolute;
+        display: inline-block;
+    }
+    .header-menu {
+        float: left;
+        list-style: none;
+        padding: 0;
+        padding-left: 90px;
+        margin: 0;
+        li {
+            font-size: 14px;
+            font-weight: 500;
+            display: inline-block;
+            margin-right: 30px;
+            a {
+                display: block;
+                padding-top: 45px;
+            }
+        }
+    }
+    .button {
+        &.button-login {
+            top: 33px;
+            position: relative;
+        }
+        &.button-menu {
+            top: 12px;
+            right: 0;
+            height: 50px;
+            z-index: 99;
+            display: none;
+            padding: 0;
+            position: absolute;
+            span {
+                &,
+                &:before,
+                &:after {
+                    width: 33px;
+                    height: 3px;
+                    float: left;
+                    display: block;
+                    position: relative;
+                    background-color: $base-1;
+                    transition: all 450ms;
+                }
+                &:before {
+                    top: -10px;
+                    content: "";
+                }
+                &:after {
+                    bottom: -8px;
+                    content: "";
+                }
+            }
+            &.active {
+                span {
+                    background-color: transparent;
+                    &:before {
+                        background-color: $base-1;
+                        transform: rotate(45deg) translate(9px, 9px);
+                    }
+                    &:after {
+                        background-color: $base-1;
+                        transform: rotate(-45deg) translate(6px, -6px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .app-header {
+        .header-logo {
+            top: 15px;
+            left: 0;
+            width: 45px;
+        }
+        .header-menu,
+        .header-links {
+            display: none;
+        }
+        .button {
+            &.button-menu {
+                display: block;
+            }
+        }
+    }
+}

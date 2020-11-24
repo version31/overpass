@@ -1,0 +1,734 @@
+:root {
+    --font-family-1: "IRANSans";
+    --font-family-2: "iranyekan";
+    --font-family-3: "iranyekan";
+}
+/**
+*
+*	Name:			IRAN Sans-Serif Font
+*	Version:		5.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 25, 2012
+*	Updated on:		Sep 01, 2017
+*	Website:		             http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت های ایران سن سریف یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRAN Sans-serif fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*	
+**/
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Black.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Black.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Black.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Black.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Black.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Bold.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Bold.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Bold.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Medium.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Medium.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Medium.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_Light.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_Light.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_Light.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum)_UltraLight.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum)_UltraLight.woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum)_UltraLight.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum)_UltraLight.ttf") format("truetype");
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot");
+    src: url("../fonts/eot/IRANSansWeb(FaNum).eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff2/IRANSansWeb(FaNum).woff2") format("woff2"), /* FF39+,Chrome36+, Opera24+*/ url("../fonts/woff/IRANSansWeb(FaNum).woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/IRANSansWeb(FaNum).ttf") format("truetype");
+}
+/**
+*
+*	Name:			IRANYekan Font
+*	Version:			3.0
+*	Author:			Moslem Ebrahimi (moslemebrahimi.com)
+*	Created on:		Dec 20, 2018
+*	Updated on:		Dec 20, 2018
+*	Website:			http://fontiran.com
+*	Copyright:		Commercial/Proprietary Software
+--------------------------------------------------------------------------------------
+فونت ایران یکان یک نرم افزار مالکیتی محسوب می شود. جهت آگاهی از قوانین استفاده از این فونت ها لطفا به وب سایت (فونت ایران دات کام) مراجعه نمایید
+--------------------------------------------------------------------------------------
+IRANYekan fonts are considered a proprietary software. To gain information about the laws regarding the use of these fonts, please visit www.fontiran.com 
+--------------------------------------------------------------------------------------
+This set of fonts are used in this project under the license: (.....)
+--------------------------------------------------------------------------------------
+*	
+**/
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fonts/eot/iranyekanwebboldfanum.eot");
+    src: url("../fonts/eot/iranyekanwebboldfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebboldfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebboldfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 100;
+    src: url("../fonts/eot/iranyekanwebthinfanum.eot");
+    src: url("../fonts/eot/iranyekanwebthinfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebthinfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebthinfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/eot/iranyekanweblightfanum.eot");
+    src: url("../fonts/eot/iranyekanweblightfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanweblightfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanweblightfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/eot/iranyekanwebregularfanum.eot");
+    src: url("../fonts/eot/iranyekanwebregularfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebregularfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebregularfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/eot/iranyekanwebmediumfanum.eot");
+    src: url("../fonts/eot/iranyekanwebmediumfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebmediumfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebmediumfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/eot/iranyekanwebextraboldfanum.eot");
+    src: url("../fonts/eot/iranyekanwebextraboldfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebextraboldfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebextraboldfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/eot/iranyekanwebblackfanum.eot");
+    src: url("../fonts/eot/iranyekanwebblackfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebblackfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebblackfanum.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: iranyekan;
+    font-style: normal;
+    font-weight: 950;
+    src: url("../fonts/eot/iranyekanwebextrablackfanum.eot");
+    src: url("../fonts/eot/iranyekanwebextrablackfanum.eot?#iefix") format("embedded-opentype"), /* IE6-8 */ url("../fonts/woff/iranyekanwebextrablackfanum.woff") format("woff"), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url("../fonts/ttf/iranyekanwebextrablackfanum.ttf") format("truetype");
+}
+
+body {
+    direction: rtl;
+    text-align: right;
+}
+.container {
+    direction: rtl !important;
+}
+@media (min-width: 768px) {
+    .offset-md-3 {
+        margin-left: inherit !important;
+        margin-right: 25%;
+    }
+}
+@media (min-width: 992px) {
+    .offset-lg-3 {
+        margin-left: inherit !important;
+        margin-right: 25% !important;
+    }
+    .offset-lg-4 {
+        margin-left: inherit !important;
+        margin-right: 33.3333333333% !important;
+    }
+    .offset-lg-6 {
+        margin-left: inherit !important;
+        margin-right: 50% !important;
+    }
+}
+// Helpers
+.pl-60 {
+    padding-left: inherit;
+    padding-right: 60px;
+}
+.text-right {
+    text-align: left !important;
+}
+.text-left {
+    text-align: right !important;
+}
+// Order
+@media (max-width: 576px) {
+    .order-xs-1 {
+        order: 2;
+    }
+    .order-xs-2 {
+        order: 1;
+    }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+    .order-sm-1 {
+        order: 2;
+    }
+    .order-sm-2 {
+        order: 1;
+    }
+}
+@media (min-width: 767px) and (max-width: 992px) {
+    .order-md-1 {
+        order: 2;
+    }
+    .order-md-2 {
+        order: 1;
+    }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+    .order-lg-1 {
+        order: 2;
+    }
+    .order-lg-2 {
+        order: 1;
+    }
+}
+@media (min-width: 1200px) {
+    .order-xl-1 {
+        order: 2;
+    }
+    .order-xl-2 {
+        order: 1;
+    }
+}
+
+// Elements
+.el-list {
+    &.el-list-icon-1 {
+        li {
+            .el-list-icon {
+                margin-right: inherit;
+                margin-left: 6px;
+            }
+        }
+    }
+    &.el-list-icon-2 {
+        li {
+            .el-list-icon {
+                margin-right: inherit;
+                margin-left: 6px;
+            }
+        }
+    }
+    &.el-list-style-1 {
+        li {
+            .el-list-icon {
+                margin-right: inherit;
+                margin-left: 6px;
+            }
+        }
+    }
+}
+.el-slider {
+    .el-slider-nav {
+        // ----
+        &.horizontal {
+            .el-slider-prev,
+            .el-slider-next {
+                &.el-slider-prev {
+                    margin-right: inherit;
+                    margin-left: 15px;
+                    svg {
+                        transform: rotate(90deg);
+                    }
+                }
+                &.el-slider-next {
+                    svg {
+                        transform: rotate(-90deg);
+                    }
+                }
+            }
+        }
+    }
+}
+.el-data-filters {
+    .el-data-filters-links {
+        .el-data-filter-title {
+            float: right;
+            margin-right: inherit;
+            margin-left: 30px;
+        }
+    }
+}
+.el-heading {
+    .heading-arrow {
+        right: inherit;
+        left: 0;
+    }
+    &.el-heading-2 {
+        h2 {
+            right: -100%;
+            position: relative; 
+        }
+    }
+    &.el-heading-3 {
+        .el-slider-nav {
+            left: inherit;
+            right: calc(18 * var(--vw));
+        }
+    }
+}
+@media (max-width: 992px) {
+    // Heading - 3
+    .el-heading {
+        &.el-heading-3 {
+            .el-slider-nav {
+                right: inherit;
+                left: 0;
+            }
+        }
+    }
+}
+
+// Header
+.app-header {
+    .header-logo {
+        left: inherit;
+        right: 15px;
+    }
+    .header-menu {
+        float: right;
+        padding-left: inherit;
+        padding-right: 90px;
+        li {
+            margin-right: inherit;
+            margin-left: 30px;
+        }
+    }
+    .button {
+        &.button-menu {
+            right: inherit;
+            left: 0;
+            span {
+                &,
+                &:before,
+                &:after {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .app-header {
+        .header-logo {
+            left: inherit;
+            right: 0;
+        }
+    }
+}
+
+// Footer
+.app-footer {
+    .footer-logo {
+        svg {
+            margin-right: inherit;
+            margin-left: 15px;
+        }
+    }
+    &:before {
+        left: inherit !important;
+        border-bottom-left-radius: inherit !important;
+        right: 0;
+        border-bottom-right-radius: 50%;
+    }
+    &:after {
+        right: inherit !important;
+        border-bottom-right-radius: inherit !important;
+        left: 0;
+        border-bottom-left-radius: 50%;
+    }
+}
+.app-footer {
+    .el-shape {
+        .circle {
+            &.circle-1 {
+                left: inherit;
+                right: 2px;
+                transform: rotate(0deg);
+            }
+            &.circle-2 {
+                right: inherit;
+                left: 2px;
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+// Hero
+.section-hero {
+    &.section-hero-1 {
+        .hero-right {
+            right: inherit;
+            left: 0;
+            .hero-slider {
+                .el-slider {
+                    .el-slider-prev,
+                    .el-slider-next {
+                        left: inherit;
+                        right: -32px;
+                    }
+                }
+                .el-slider {
+                    .el-slider-pagination {
+                        left: inherit;
+                        left: inherit;
+                        right: 4.5vw;
+                        right: calc(4.5 * var(--vw));
+                        .title {
+                            padding-left: inherit;
+                            padding-right: 4.5vw;
+                            padding-right: calc(4.5 * var(--vw));
+                        }
+                    }
+                }
+                .el-slider {
+                    .el-slider-nav {
+                        right: inherit;
+                        left: 0;
+                    }
+                    .el-slider-dots {
+                        left: inherit;
+                        right: 0;
+                    }
+                }
+            }
+        }
+        .el-shape {
+            .circle &.circle-1 {
+                left: inherit;
+                right: -60%;
+            }
+            &.circle-2 {
+                right: inherit;
+                left: -50%;
+            }
+        }
+    }
+    &.section-hero-2 {
+        .hero-right {
+            right: inherit;
+            left: 0;
+        }
+        .el-shape {
+            .circle {
+                &.circle-1 {
+                    left: inherit;
+                    right: -60%;
+                }
+                &.circle-2 {
+                    right: inherit;
+                    left: -50%;
+                }
+                &.circle-3 {
+                    right: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .section-hero {
+        &.section-hero-1 {
+            .hero-left,
+            &.hero-right {
+                .hero-slider {
+                    .el-slider {
+                        .el-slider-prev,
+                        .el-slider-next {
+                            left: inherit;
+                            right: -25px;
+                        }
+                    }
+                    .el-slider-pagination {
+                        .title {
+                            padding-left: 60px !important;
+                            padding-right: 30px !important;
+                        }
+                    }
+                }
+            }
+        }
+        &.section-hero-2 {
+            .display-center {
+                left: inherit !important;
+                right: 0 !important;
+            }
+            .el-shape {
+                .circle {
+                    &.circle-3 {
+                        right: -100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .display-center {
+            right: 0 !important;
+        }
+        .el-shape {
+            .circle {
+                &.circle-3 {
+                    right: -100% !important;
+                    left: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+// Features
+.el-feature {
+    .icon {
+        left: inherit;
+        right: -22px;
+    }
+    .button {
+        float: left !important;
+        transform: rotate(180deg);
+    }
+}
+
+// Portfolio
+.section-portfolio {
+    &.section-portfolio-2 {
+        .el-shape {
+            .circle {
+                &.circle-1 {
+                    left: inherit;
+                    right: -50%;
+                }
+                &.circle-2 {
+                    right: inherit;
+                    left: -50%;
+                }
+            }
+        }
+    }
+}
+.section-portfolio {
+    &.section-portfolio-3 {
+        .el-shape {
+            right: calc(29.16667 * var(--vw));
+            right: 29.16667vw;
+            right: calc(50vw - 20.83333 * var(--vw));
+            left: 0;
+            .circle-1 {
+                right: inherit;
+                left: -60%;
+            }
+        }
+    }
+}
+.section-portfolio {
+    &.section-portfolio-4 {
+        .el-shape {
+            right: calc(29.16667 * var(--vw));
+            right: 29.16667vw;
+            right: calc(50vw - 20.83333 * var(--vw));
+            left: 0;
+            .circle-2 {
+                right: -20%;
+            }
+        }
+    }
+}
+.section-portfolio {
+    &.section-portfolio-5 {
+        .el-shape {
+            .circle-3 {
+                right: inherit;
+                left: -25%;
+            }
+        }
+    }
+}
+@media (max-width: 992px) {
+    .section-portfolio {
+        &.section-portfolio-3 {
+            .el-shape {
+                .circle-1 {
+                    right: inherit;
+                    left: -60%;
+                }
+            }
+            .el-heading {
+                .el-slider-nav {
+                    right: inherit;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+// Story
+.section-story {
+    .el-item {
+        position: relative;
+        .detail {
+            padding-right: inherit;
+            padding-left: 15%;
+        }
+        &:nth-child(even) {
+            .detail {
+                padding-right: 15%;
+                padding-left: 0;
+            }
+        }
+    }
+}
+.section-story {
+    &.section-story-18 {
+        .el-item {
+            .image {
+                margin-left: inherit;
+                margin-right: auto;
+            }
+            &:nth-child(even) {
+                .image {
+                    margin-left: inherit;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.section-story {
+    &.section-story-19 {
+        .el-item {
+            .image {
+                margin-left: inherit;
+                margin-right: auto;
+            }
+            &:nth-child(even) {
+                .image {
+                    margin-left: inherit;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+.story-item {
+    &:nth-child(1) {
+        .el-shape {
+            .circle {
+                left: inherit;
+                right: -45%;
+            }
+        }
+    }
+    &:nth-child(2) {
+        .el-shape {
+            .circle {
+                left: inherit;
+                right: -45%;
+            }
+        }
+    }
+    &:nth-child(3) {
+        .el-shape {
+            .circle {
+                right: inherit;
+                left: -45%;
+            }
+        }
+    }
+}
+
+// Testimonials
+.section-quotes {
+    .item {
+        float: left;
+        margin-right: inherit;
+        margin-left: 5.7%;
+    }
+    .el-slider-nav {
+        left: inherit;
+        right: 0;
+    }
+}
+.section-quotes {
+    // Pagination
+    .el-slider {
+        .el-slider-dots {
+            margin-left: inherit;
+            margin-right: 33%;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .section-quotes {
+        .item {
+            margin-right: inherit;
+            margin-left: 5.7%;
+        }
+        .el-slider-nav {
+            top: 0 !important;
+            left: inherit !important;
+            right: -15px !important;
+        }
+    }
+}
+
+// Blog/Posts
+.section-featured-posts {
+    .el-shape {
+        right: calc(29.16667 * var(--vw));
+        right: 29.16667vw;
+        right: calc(50vw - 20.83333 * var(--vw));
+        left: 0;
+        .circle-2 {
+            left: inherit;
+            right: -20%;
+        }
+    }
+}
+
+// Animations
+
+[data-aos="ao-hero-1-1"] {
+    transform: translate(-100%, 0);
+    opacity: 0;
+    transition-property: transform, opacity;
+    &.aos-animate {
+        transform: translate(0);
+        opacity: 1;
+    }
+}

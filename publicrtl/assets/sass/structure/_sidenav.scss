@@ -1,0 +1,66 @@
+/*------------------------------------
+    Sidenav
+------------------------------------*/
+$sd-width: 330px;
+
+.app-sidenav {
+    top: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transition: all 600ms;
+    .button-login {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 63px;
+        color: $base-0;
+        opacity: 0;
+        position: fixed;
+        padding-top: 21px;
+        border-radius: 0;
+        transform: translate(0, 63px);
+        transition: 1800ms;
+    }
+    .sidenav-menu {
+        list-style: none;
+        text-align: center;
+        padding: 90px 0;
+        margin: 0;
+        transition: all 600ms;
+        transform: translate(0, 60px);
+        li {
+            color: $base-1;
+            color: #000;
+            display: block;
+            font-size: 27px;
+            margin-bottom: 30px;
+        }
+    }
+    &.active {
+        bottom: 0;
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+        background-color: $gray;
+        .button-login {
+            opacity: 1;
+            transform: translate(0);
+        }
+        .sidenav-menu {
+            left: 0;
+            transform: translate(0);
+        }
+    }
+}
+@media (max-width: 992px) {
+    .app-sidenav {
+        .sidenav-menu {
+            padding: 60px 0;
+        }
+    }
+}

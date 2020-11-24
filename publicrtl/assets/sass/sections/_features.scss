@@ -1,0 +1,94 @@
+/*------------------------------------
+    Section: Features
+------------------------------------*/
+
+.section-features {
+    .display-custom {
+        top: 0;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        padding-top: $space;
+    }
+}
+
+.el-feature {
+    overflow: hidden;
+    position: relative;
+    background-color: $base-0;
+    padding: 3vw 3vw;
+    padding: calc(3 * var(--vw)) calc(3 * var(--vw));
+    .icon {
+        left: -22px;
+        position: relative;
+    }
+    .button {
+        float: right;
+        margin-bottom: 15px;
+        position: relative;
+        background-color: #fff;
+    }
+}
+
+.el-hover {
+    transform: scale(1);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-property: transform, box-shadow;
+    p {
+        opacity: 0;
+        visibility: hidden;
+        transition: all 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    &:hover {
+        z-index: 3;
+        transform: translate(0, -20px);
+        // box-shadow: 0 1.38889vw 2.77778vw rgba(0, 0, 0, 0.05);
+        // box-shadow: 0 calc(1.38889 * var(--vw)) calc(2.77778 * var(--vw)) rgba(0, 0, 0, 0.05);
+        p {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0);
+        }
+        .button {
+            box-shadow: 0 0.27778vw 0.27778vw rgba(0, 0, 0, 0.1);
+            box-shadow: 0 calc(0.27778 * var(--vw)) calc(0.27778 * var(--vw)) rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section-features-1 {
+        .el-feature {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 30px;
+            background-color: #f7f9fb !important;
+            p {
+                display: none;
+            }
+            h3 {
+                font-size: 18px;
+                margin-bottom: 45px;
+            }
+            .button {
+                right: 12px;
+                bottom: 12px;
+                position: absolute;
+            }
+        }
+        &.el-hover {
+            &:hover {
+                transform: none !important;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section-features-1 {
+        .display-custom {
+            position: relative;
+            padding-bottom: $space;
+        }
+    }
+}
