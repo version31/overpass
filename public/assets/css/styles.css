@@ -4421,6 +4421,12 @@ Reset
 /*------------------------------------
     Element: Heading
 ------------------------------------*/
+.el-heading .heading-arrow {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+
 .el-heading.el-heading-1 h1,
 .el-heading.el-heading-1 h2,
 .el-heading.el-heading-1 h3 {

@@ -17,9 +17,12 @@
 
 // Heading - 1
 .el-heading {
+    .heading-arrow {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
     &.el-heading-1 {
-        // width: 30vw;
-        // width: calc(30 * var(--vw));
         h1,
         h2,
         h3 {
