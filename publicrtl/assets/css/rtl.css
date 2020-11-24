@@ -487,6 +487,9 @@ body {
 
 .el-feature .button {
   float: left !important;
+}
+
+.el-feature .button svg {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }

@@ -291,7 +291,7 @@ body {
     &.el-heading-2 {
         h2 {
             right: -100%;
-            position: relative; 
+            position: relative;
         }
     }
     &.el-heading-3 {
@@ -520,7 +520,9 @@ body {
     }
     .button {
         float: left !important;
-        transform: rotate(180deg);
+        svg {
+            transform: rotate(180deg);
+        }
     }
 }
 
