@@ -48,6 +48,27 @@
 /*
 * Text Colors
 */
+.text-color {
+    color: $text-color !important;
+}
+.text-color-1 {
+    color: $color-1 !important;
+}
+.text-color-2 {
+    color: $color-2 !important;
+}
+.text-color-3 {
+    color: $color-3 !important;
+}
+.text-color-4 {
+    color: $color-4 !important;
+}
+.text-color-5 {
+    color: $color-5 !important;
+}
+.text-color-6 {
+    color: $color-6 !important;
+}
 .text-line {
     white-space: nowrap;
     overflow: hidden;
@@ -57,49 +78,49 @@
     color: $black !important;
 }
 .text-dark-1 {
-    color: #333333;
+    color: #333333 !important;
 }
 .text-dark-2 {
-    color: #666666;
+    color: #666666 !important;
 }
 .text-dark-3 {
-    color: #999999;
+    color: #999999 !important;
 }
 .text-light {
     color: $white !important;
 }
 .text-light-1 {
-    color: #eeeeee;
+    color: #eeeeee !important;
 }
 .text-light-2 {
-    color: #cccccc;
+    color: #cccccc !important;
 }
 .text-light-3 {
-    color: #aaaaaa;
+    color: #aaaaaa !important;
 }
 .text-base-0 {
-    color: $base-0;
+    color: $base-0 !important;
 }
 .text-base-1 {
-    color: $base-1;
+    color: $base-1 !important;
 }
 .text-base-1 {
-    color: $base-2;
+    color: $base-2 !important;
 }
 .text-danger {
-    color: $danger;
+    color: $danger !important;
 }
 .text-success {
-    color: $success;
+    color: $success !important;
 }
 .text-warning {
-    color: $warning;
+    color: $warning !important;
 }
 .text-primary {
     color: $primary !important;
 }
 .text-secondary {
-    color: $secondary;
+    color: $secondary !important;
 }
 .text-gradient {
     background-image: linear-gradient(to left, $primary, $secondary);

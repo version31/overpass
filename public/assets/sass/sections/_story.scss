@@ -19,6 +19,10 @@
         .detail {
             padding-right: 15%;
         }
+        .story-number {
+            top: 45px;
+            position: absolute;
+        }
         &:nth-child(even) {
             .detail {
                 padding-left: 15%;

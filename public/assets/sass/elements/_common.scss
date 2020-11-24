@@ -452,3 +452,63 @@
         }
     }
 }
+
+
+/*------------------------------------
+    Element: List
+------------------------------------*/
+
+.el-list {
+    font-weight: 300;
+    &.el-list-icon-1 {
+        list-style: none;
+        padding: 0;
+        li {
+            display: block;
+            margin-bottom: 9px;
+            .el-list-icon {
+                top: 3px;
+                width: 33px;
+                height: 33px;
+                font-size: 18px;
+                line-height: 33px;
+                text-align: center;
+                position: relative;
+                display: inline-block;
+                margin-right: 6px;
+                border-radius: 50%;
+            }
+        }
+    }
+    &.el-list-icon-2 {
+        list-style: none;
+        padding: 0;
+        li {
+            display: block;
+            margin-bottom: 9px;
+            .el-list-icon {
+                position: relative;
+                margin-right: 6px;
+                display: inline-block;
+            }
+        }
+    }
+    &.el-list-style-1 {
+        list-style: none;
+        padding: 0;
+        li {
+            display: block;
+            margin-bottom: 9px;
+            .el-list-icon {
+                top: -2px;
+                width: 6px;
+                height: 6px;
+                display: inline-block;
+                position: relative;
+                margin-right: 6px;
+                border-radius: 50%;
+                background-color: $primary;
+            }
+        }
+    }
+}
