@@ -4,6 +4,10 @@
 
 // Hero - 1
 .section-hero {
+    .el-heading {
+        width: 30vw;
+        width: calc(30 * var(--vw));
+    }
     &.section-hero-1 {
         z-index: 1;
         height: 100vh;
@@ -265,6 +269,9 @@
 
 @media (max-width: 768px) {
     .section-hero {
+        .el-heading { 
+            width: 100% !important;
+        }
         &.section-hero-1 {
             height: inherit;
             .hero-left,
@@ -353,9 +360,6 @@
                 width: 100% !important;
                 height: inherit;
                 position: relative;
-                &.hero-right {
-          
-                }
             }
             .el-heading {
                 margin-bottom: $space;

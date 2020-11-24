@@ -161,7 +161,7 @@
         },
         Paroller: function () {
             $(".el-heading-2 .el-big-title").paroller({ factor: 0.5, factorXs: 0.2, type: "foreground", direction: "horizontal" });
-            $(".section-hero .el-item-image").paroller({ factor: -0.1, type: "foreground"});
+            $(".section-hero .el-item-image").paroller({ factor: -0.1, factorXs: 0, type: "foreground" });
         },
         DataFilter: function () {
             var className = "active";

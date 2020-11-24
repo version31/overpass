@@ -4421,11 +4421,6 @@ Reset
 /*------------------------------------
     Element: Heading
 ------------------------------------*/
-.el-heading.el-heading-1 {
-  width: 30vw;
-  width: calc(30 * var(--vw));
-}
-
 .el-heading.el-heading-1 h1,
 .el-heading.el-heading-1 h2,
 .el-heading.el-heading-1 h3 {
@@ -4439,7 +4434,7 @@ Reset
 }
 
 .el-heading.el-heading-1 h1 {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .el-heading.el-heading-1 h1 span {
@@ -4560,6 +4555,10 @@ Reset
   }
   .el-heading.el-heading-2 h2 {
     font-size: 4.5rem !important;
+  }
+  .el-heading.el-heading-3 .el-slider-nav {
+    left: inherit;
+    right: 0;
   }
 }
 
@@ -4792,28 +4791,7 @@ Reset
     Element: Tabs
 ------------------------------------*/
 .el-data-filters {
-  overflow: hidden;
   position: relative;
-}
-
-.el-data-filters .el-data-filters-links {
-  width: 100%;
-  overflow-x: auto;
-}
-
-.el-data-filters .el-data-filters-links::-webkit-scrollbar {
-  height: 0;
-  width: 0;
-}
-
-.el-data-filters .el-data-filters-links::-webkit-scrollbar-thumb {
-  height: 0;
-  width: 0;
-}
-
-.el-data-filters .el-data-filters-links::-webkit-scrollbar-track {
-  height: 0;
-  width: 0;
 }
 
 .el-data-filters .el-data-filters-links .el-data-filter-title {
@@ -4826,6 +4804,8 @@ Reset
 }
 
 .el-data-filters .el-data-filters-links ul {
+  width: 100%;
+  overflow-x: auto;
   display: inline-block;
   list-style: none;
   -webkit-user-select: none;
@@ -4860,9 +4840,21 @@ Reset
 }
 
 @media (max-width: 768px) {
+  .el-data-filters .el-data-filters-links {
+    height: 75px;
+    position: relative;
+  }
+  .el-data-filters .el-data-filters-links ul {
+    top: 45px;
+    left: 0;
+    right: 0;
+    width: 111%;
+    position: absolute;
+  }
   .el-data-filters .el-data-filters-links ul li {
-    padding-left: 6px;
-    padding-right: 6px;
+    height: inherit;
+    font-size: 9px;
+    padding: 10px 12px;
   }
 }
 
@@ -4872,6 +4864,11 @@ Reset
 /*------------------------------------
     Section: Hero
 ------------------------------------*/
+.section-hero .el-heading {
+  width: 30vw;
+  width: calc(30 * var(--vw));
+}
+
 .section-hero.section-hero-1 {
   z-index: 1;
   height: 100vh;
@@ -5143,6 +5140,9 @@ Reset
 }
 
 @media (max-width: 768px) {
+  .section-hero .el-heading {
+    width: 100% !important;
+  }
   .section-hero.section-hero-1 {
     height: inherit;
   }
@@ -6045,6 +6045,12 @@ Reset
 }
 
 @media (max-width: 992px) {
+  .section-portfolio .el-heading .button {
+    display: none;
+  }
+  .section-portfolio.section-portfolio-2 .container {
+    overflow: initial !important;
+  }
   .section-portfolio.section-portfolio-3 .el-shape {
     top: 0;
     left: 0;

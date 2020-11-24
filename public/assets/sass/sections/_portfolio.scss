@@ -133,6 +133,16 @@
 
 @media (max-width: 992px) {
     .section-portfolio {
+        .el-heading {
+            .button {
+                display: none;
+            }
+        }
+        &.section-portfolio-2 {
+            .container {
+                overflow: initial !important;
+            }
+        }
         &.section-portfolio-3 {
             .el-shape {
                 top: 0;

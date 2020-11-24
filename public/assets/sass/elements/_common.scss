@@ -18,8 +18,8 @@
 // Heading - 1
 .el-heading {
     &.el-heading-1 {
-        width: 30vw;
-        width: calc(30 * var(--vw));
+        // width: 30vw;
+        // width: calc(30 * var(--vw));
         h1,
         h2,
         h3 {
@@ -29,7 +29,7 @@
             }
         }
         h1 {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
             span {
                 margin-bottom: 12px;
                 border-bottom: 4px solid $base-1;
@@ -136,6 +136,15 @@
             padding-bottom: $space / 1.2 !important;
             h2 {
                 font-size: 4.5rem !important;
+            }
+        }
+    }
+    // Heading - 3
+    .el-heading {
+        &.el-heading-3 {
+            .el-slider-nav {
+                left: inherit;
+                right: 0;
             }
         }
     }
@@ -380,12 +389,8 @@
 ------------------------------------*/
 
 .el-data-filters {
-    overflow: hidden;
     position: relative;
     .el-data-filters-links {
-        width: 100%;
-        overflow-x: auto;
-        @include no-scroll-bar();
         .el-data-filter-title {
             float: left;
             height: 50px;
@@ -395,6 +400,8 @@
             margin-right: 30px;
         }
         ul {
+            width: 100%;
+            overflow-x: auto;
             display: inline-block;
             list-style: none;
             user-select: none;
@@ -425,10 +432,18 @@
 @media (max-width: 768px) {
     .el-data-filters {
         .el-data-filters-links {
+            height: 75px;
+            position: relative;
             ul {
+                top: 45px;
+                left: 0;
+                right: 0;
+                width: 111%;
+                position: absolute;
                 li {
-                    padding-left: 6px;
-                    padding-right: 6px;
+                    height: inherit;
+                    font-size: 9px;
+                    padding: 10px 12px;
                 }
             }
         }
