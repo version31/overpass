@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>Overpass</title>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600,700,900&display=swap">
+    <link rel="stylesheet" href="assets/css/plugins.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css" />
+</head>
+
+<body class="no-scroll-bar">
+<!--Header-->
+<header class="app-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <a class="header-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" class="c-header__logo__icon" style="transform-origin: 50% 50%; transform: translate(0px, 0px);">
+                        <defs>
+                            <mask id="logo-mask">
+                                <path fill="#fff" d="M30,30H9.4c0,11.4,9.2,20.6,20.6,20.6c0,0,0,0,0,0V30z" class="part--4__mask" data-svg-origin="30 30" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px;"></path>
+                            </mask>
+                        </defs>
+                        <g class="animated" style="opacity: 0;">
+                            <path fill="#0099FF" d="M0.6,30c0,16.2,13.2,29.4,29.4,29.4V0.6C13.8,0.6,0.6,13.8,0.6,30z" class="part--5" style="opacity: 0;"></path>
+                            <path fill="#FFDA54" d="M30,50.6c11.4,0,20.6-9.2,20.6-20.6H9.4C9.4,41.4,18.6,50.6,30,50.6z" class="part--3" data-svg-origin="29.999998092651367 29.999998092651367" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></path>
+                            <path fill="#0099FF" d="M0.6,30c0,16.2,13.2,29.4,29.4,29.4V0.6C13.8,0.6,0.6,13.8,0.6,30z" class="part--1" data-svg-origin="29.99999964237213 30.000001549720764" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px;"></path>
+                            <path fill="#0099FF" d="M0.6,30c0,16.2,13.2,29.4,29.4,29.4V0.6C13.8,0.6,0.6,13.8,0.6,30z" class="part--2" data-svg-origin="29.99999964237213 30.000001549720764" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px; opacity: 1;"></path>
+                            <g mask="url(#logo-mask)">
+                                <path fill="#F9B8C4" d="M30,30H9.4c0,11.4,9.2,20.6,20.6,20.6c0,0,0,0,0,0V30z" class="part--4" data-svg-origin="30 30" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px;"></path>
+                            </g>
+                        </g>
+                        <g class="static" style="opacity: 1;">
+                            <path fill="#0099FF" d="M0.6,30c0,16.2,13.2,29.4,29.4,29.4V0.6C13.8,0.6,0.6,13.8,0.6,30z"></path>
+                            <path fill="#FFDA54" d="M30,50.6c11.4,0,20.6-9.2,20.6-20.6H9.4C9.4,41.4,18.6,50.6,30,50.6z"></path>
+                            <path fill="#F9B8C4" d="M30,30H9.4c0,11.4,9.2,20.6,20.6,20.6l0,0V30z"></path>
+                        </g>
+                    </svg>
+                </a>
+                <ul class="header-menu" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">
+                    <li>
+                        <a href="">Explore</a>
+                    </li>
+                    <li>
+                        <a href="">Company</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">Marketplace</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 text-right" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1500">
+                <button class="button button-menu button-display-sidenav">
+                    <span></span>
+                </button>
+                <div class="header-links">
+                    <a href="#" class="button button-circle-md button-circle button-light button-login">
+                        <span class="text">EN</span>
+                    </a>
+                    <a href="#" class="button button-circle-md button-circle button-light button-login">
+                        <span class="text">FA</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--/-->
+<!--Sidenav-->
+<div class="app-sidenav app-sidenav-1">
+    <div class="sidenav-menu">
+        <div class="sidenav-body">
+            <div class="sidenav-body-inner">
+                <ul class="sidenav-menu">
+                    <li>
+                        <a href="">Explore</a>
+                    </li>
+                    <li>
+                        <a href="">Company</a>
+                    </li>
+                    <li>
+                        <a href="">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">Marketplace</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="button button-lg button-block bg-color-1 button-login">
+        <span class="text">LOGIN</span>
+    </a>
+    <div class="display-center">
+        <div class="sidenav-overlay"></div>
+    </div>
+</div>
+<!--/-->
+<!--About-->
+<section class="section section-about section-about-1">
+    <div class="pt-sapce pb-space">
+        <div class="container">
+            <div class="row row-xl">
+                <div class="col-lg-10 div-center">
+                    <header class="el-heading el-heading-1 heading-block pt-space mt-space" data-aos="fade-up" data-aos-delay="900" data-aos-duration="1000">
+                        <h1>
+                            <div><span>Overpass is </span></div>
+                            <div><span>where remote</span></div>
+                            <div><span>works.</span></div>
+                        </h1>
+                        <p class="max-w-576">Overpass is on a mission to remove any obstacles to working remotely. We provide the platform to hire the best sales experts and maintain amazing customer relationships from anywhere in the world.</p>
+                        <div class="heading-arrow">
+                            <svg width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg" class="c-hero__arrow">
+                                <path fill="none" stroke="#D3D8DB" stroke-width="6" d="M3.2,3.2l107.5,107.5 M110.8,110.8 M110.8,110.8" style="stroke-dashoffset: 0; stroke-dasharray: none;"></path>
+                                <polyline fill="none" stroke="#D3D8DB" stroke-width="6" stroke-linecap="square" points="48.2,110.8 110.8,110.8 110.8,47.2 " style="stroke-dashoffset: 0; stroke-dasharray: none; opacity: 1;"></polyline>
+                            </svg>
+                        </div>
+                    </header>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/-->
+<footer class="app-footer app-footer-1">
+    <div class="el-shape">
+        <div class="circle circle-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.53 188.53">
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M0,0V188.53H188.53C188.53,84.41,104.12,0,0,0Z" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div class="circle circle-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 188.53 188.53">
+                <g id="Layer_2" data-name="Layer 2">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                        <path class="cls-1" d="M0,0V188.53H188.53C188.53,84.41,104.12,0,0,0Z" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <!--Footer Widgets-->
+    <div class="footer-widgets">
+        <div class="pt-space">
+            <div class="container">
+                <div class="row row-0 row-eq-height">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                        <a href="#" class="footer-logo">
+                            <span class="icon">
+                                <svg width="51" height="51" viewBox="0 0 51 51" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M25.4964 0C39.5826 0 50.9927 11.4144 50.9927 25.4897C50.9927 39.5724 39.5754 50.9795 25.4964 50.9795C11.4174 50.9868 0 39.5724 0 25.4897C0 11.4144 11.4174 0 25.4964 0ZM12.8427 28.2888C12.8427 35.2756 18.5078 40.9464 25.5036 40.9464C32.4922 40.9464 38.1646 35.2829 38.1646 28.2888C38.1573 28.2888 28.638 28.2888 12.8427 28.2888Z"></path>
+                                </svg>
+                            </span>
+                            <span class="text">OVERPASS</span>
+                        </a>
+                    </div>
+                    <div class="col-7 col-sm-6 col-md-4 col-lg-3 offset-lg-1">
+                        <div class="el-widget el-widget-links">
+                            <div class="el-widget-head">
+                                <h3>Industries</h3>
+                            </div>
+                            <div class="el-widget-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Finance</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Real Estate</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Marketplace</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-widget el-widget-links">
+                            <div class="el-widget-head">
+                                <h3>Company</h3>
+                            </div>
+                            <div class="el-widget-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">About Us</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Careers</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Blog</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-sm-6 col-md-4 col-lg-3">
+                        <div class="el-widget el-widget-links">
+                            <div class="el-widget-head">
+                                <h3>Resources</h3>
+                            </div>
+                            <div class="el-widget-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Terms of Service</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Privacy Policy</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Blog</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="el-widget el-widget-links">
+                            <div class="el-widget-head">
+                                <h3>Expolre</h3>
+                            </div>
+                            <div class="el-widget-body">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Marketplace</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Campaigns</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="text">Pricing</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-2">
+                        <div class="el-widget el-widget-welcome">
+                            <div class="el-widget-head">
+                                <h3>Welcome</h3>
+                            </div>
+                            <div class="el-widget-body">
+                                <p>Your next job opportunities awaits for you</p>
+                                <a href="#" class="button button-lg button-radius button-dark">
+                                    <span class="text">LEARN MORE</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="el-widget el-widget-support">
+                            <div class="el-widget-head">
+                                <h3>Support</h3>
+                            </div>
+                            <div class="el-widget-body">
+                                <p>Check out our<br /><a href=""><span class="text">Help Center</span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/-->
+    </div>
+    <!--/-->
+    <!--Footer Copyright-->
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <ul class="el-social-links">
+                        <li>
+                            <a href="#">
+                                <span class="ti-twitter-alt"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ti-vimeo-alt"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ti-sharethis"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="ti-tumblr-alt"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 text-right">
+                    <p>© Overpass 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/-->
+</footer>
+    <!--Scripts-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/main-scripts.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--/-->
+</body>
+
+</html>
