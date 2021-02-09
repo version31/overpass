@@ -2,14 +2,14 @@
 
     Theme Name  : ...
     Theme URI   : http://demo.afracode.com/...
-    Description : ... 
+    Description : ...
     Author Name : Afracode
     Author URI  : http://afracode.com
     Version     : 1.0
 
 ------------------------------------*/
 /*------------------------------------
-    
+
     STYLESHEET INDEXING
     |
     |
@@ -250,9 +250,7 @@ body.state-menu {
   height: 100vh !important;
 }
 
-body {
-  background: no-repeat url("../images/1.svg") center center/cover fixed;
-}
+
 
 body:after {
   top: 0;
@@ -2999,26 +2997,6 @@ h6,
   position: absolute;
 }
 
-.overlay-pattern .bg-pattern-1 {
-  position: absolute;
-  background: repeat url("../images/patterns/pattern-1.png") center center/9px;
-}
-
-.overlay-pattern .bg-pattern-2 {
-  position: absolute;
-  background: repeat url("../images/patterns/pattern-2.png") center center/9px;
-}
-
-.overlay-pattern .bg-pattern-3 {
-  position: absolute;
-  background: repeat url("../images/patterns/pattern-3.png") center center/5px;
-}
-
-.overlay-pattern .bg-patline-1 {
-  opacity: 0.6;
-  position: absolute;
-  background: repeat-x url("../images/patterns/patline-1.png") top center;
-}
 
 .overlay-pattern .bg-pattern-a {
   opacity: 0.6;
